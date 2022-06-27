@@ -1,0 +1,98 @@
+#outersquare:hover .redsquare {
+  animation-name: leftsquares;
+  animation-duration: 4s;
+  animation-iteration-count: 5;
+  animation-direction: forward;
+  animation-timing-function: linear;
+}
+
+#outersquare:hover .bluesquare {
+  animation-name: leftsquares;
+  animation-duration: 4s;
+  animation-iteration-count: 5;
+  animation-direction: forward;
+  animation-timing-function: linear;
+}
+
+#outersquare:hover .yellowsquare {
+  animation-name: rightsquares;
+  animation-duration: 4s;
+  animation-iteration-count: 5;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+}
+
+#outersquare:hover .greensquare {
+  animation-name: rightsquares;
+  animation-duration: 4s;
+  animation-iteration-count: 5;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+}
+
+.redsquare {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.bluesquare {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+
+.yellowsquare {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+}
+
+.greensquare {
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+
+@keyframes leftsquares {
+  0% {
+    transform: rotate(0deg);
+    margin-right: 0px;
+  }
+
+  50% {
+    transform: rotate(-90deg);
+    margin-right: 120px;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    margin-right: 0px;
+  }
+}
+
+@keyframes rightsquares {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#outersquare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+b {
+  position: fixed;
+  z-index: -1;
+}

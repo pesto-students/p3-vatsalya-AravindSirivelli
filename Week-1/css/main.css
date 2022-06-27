@@ -1,0 +1,150 @@
+body {
+    min-height: 100vh;
+}
+
+table {
+    font-family: "Lato", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left:10px;
+}
+
+td {
+    text-align: left;
+    width: 20% !important;
+    padding: 2px 0px 2px 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #e6e8e6;
+}
+
+header {
+    background-color: #353535;
+    color: white;
+    height: 34%;
+}
+
+footer {
+    background-color: #386fa4;
+    color: white;
+}
+
+.sticky-footer {
+    position: sticky;
+    top: 100%;
+}
+
+.imgDiv>img {
+    padding: 22px;
+}
+
+.cattyboard {
+    width: 200px;
+    height: 220px;
+}
+
+h3,
+p,
+td,
+i,
+button {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.detailsDiv {
+    margin-left: -100px;
+}
+
+.minicattyboard {
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    margin: -12px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.borderedtext {
+    color: blue;
+    border: 1px solid black;
+}
+
+button {
+    padding: 0;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0px 4px;
+    outline: 1px dotted black;
+    color: blue;
+    margin: 6px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 375px;
+}
+
+li {
+    float: left;
+}
+
+li i {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 35px 100px 0px 0px;
+    text-decoration: none;
+}
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    /* z-index: 1; */
+    top: 0;
+    left: 0;
+    background-color: #e6e8e6;
+    overflow-x: hidden;
+    padding-top: 20px;
+    /* width: 50px; */
+    width: 40px;
+}
+
+.sidenav i {
+    padding: 0px 6px 0px 12px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    margin-bottom: 45px;
+}
+
+.bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 115px;
+    bottom: 1px;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* bottom: 92px; */
+    bottom: 0;
+}
+
+.main {
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+}
