@@ -1,0 +1,116 @@
+.description {
+    word-wrap: break-word;
+    width: 700px;
+    font-size: 15px;
+    text-align: initial;
+}
+
+.theBeatlesPic {
+    width: 680px;
+    height: 425px;
+}
+
+.indentleft {
+    float: left;
+}
+
+.indentleft section {
+    float: left;
+}
+
+.artists {
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+
+.artists article {
+    margin: 5px;
+    margin-bottom: 40px;
+    position: relative;
+    width: 530px;
+    height: 100px;
+}
+
+.beatle {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.artists h3 {
+    float: right;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    word-break: break-word;
+    width: 92px;
+}
+
+.dates {
+    font-size: 10px;
+    float: right;
+    width: 100px;
+    word-break: break-word;
+    margin-top: 30px;
+    margin-right: -100px;
+}
+
+p,
+a {
+    font-size: 13px;
+    word-break: break-word;
+    text-align: justify;
+}
+
+header {
+    height: 40px;
+    text-align: center;
+    background-color: #e7ecef;
+    margin-top: -20px;
+    padding: 10px;
+}
+
+input,
+select {
+    margin-top: 15px;
+}
+
+Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e7ecef;
+    height: 40px;
+}
+
+Footer p {
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    margin-bottom: 60px;
+}
+
+/* {
+    background-color: #e7ecef;
+} */
+
+.btn {
+    width: 170px;
+    height: 40px;
+    background: #2f2f2f;
+    color: #fff;
+    border-radius: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #2f2f2f;
+    background: #fff;
+}
