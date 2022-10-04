@@ -1,16 +1,16 @@
-const GenerateSuccessRespone = (body) => {
+const GenerateRespone = (body) => {
     return {
-        "code": 200,
-        "message": "SUCCESS",
+        "code": body.cod,
+        "message": body?.message ? "ERROR - " + body.message : "SUCCESS",
         "data": body
     }
 }
 const GenerateErrorRespone = (body) => {
     return {
         "code": 500,
-        "message": "ERROR",
+        "message": "INTERNAL ERROR",
         "data": body
     }
 }
 
-module.exports = { GenerateSuccessRespone, GenerateErrorRespone }
+module.exports = { GenerateRespone, GenerateErrorRespone }

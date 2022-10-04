@@ -1,6 +1,6 @@
 const CONFIG = require('./config');
 const { paginate } = require('./utils/pagination');
-const { GenerateSuccessRespone, GenerateErrorRespone } = require('./utils/response');
+const { GenerateRespone, GenerateErrorRespone } = require('./utils/response');
 
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
@@ -9,7 +9,7 @@ const getWeatherDataForCity = async (cityName) => {
         let API_URL = `${CONFIG.API_BASE_URL}/weather?q=${cityName}&appid=${CONFIG.APPID}`
         const response = await fetch(API_URL);
         const data = await response.json();
-        return GenerateSuccessRespone(data);
+        return GenerateRespone(data);
     } catch (error) {
         return GenerateErrorRespone("error: " + error);
     }
@@ -22,7 +22,7 @@ const getWeatherDataForCities = async (cityArr, size = 0, page = 0) => {
         const response = await Promise.all(
             cityArr.map(getWeatherDataForCity)
         );
-        return GenerateSuccessRespone(response);
+        return GenerateRespone(response);
     } catch (error) {
         return GenerateErrorRespone("error: " + error);
     }
@@ -34,7 +34,7 @@ const getForecastForNextXDays = async (lat, lon, days) => {
         let API_URL = `${CONFIG.API_BASE_URL}/forecast/?lat=${lat}&lon=${lon}&cnt=${days}&appid=${CONFIG.APPID}`;
         const response = await fetch(API_URL);
         const data = await response.json();
-        return GenerateSuccessRespone(data);
+        return GenerateRespone(data);
     } catch (error) {
         return GenerateErrorRespone("error: " + error);
     }
